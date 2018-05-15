@@ -1,0 +1,14 @@
+package datos;
+
+public class ViajeGratis extends Beneficio {
+	private int idBeneficio;
+	private int cantidad;
+	
+	public ViajeGratis(){}
+
+	public ViajeGratis(int cantidad) {
+		super();
+		this.cantidad = cantidad;
+	}
+
+}

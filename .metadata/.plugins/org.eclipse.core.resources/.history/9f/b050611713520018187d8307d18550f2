@@ -1,0 +1,32 @@
+package datos;
+
+public class MontoFijo {
+	private int idMontoFijo;
+	private float monto;
+	
+	public MontoFijo() {}
+	
+	public MontoFijo(float monto) {
+		super();
+		this.monto = monto;
+	}
+
+	public int getIdMontoFijo() {
+		return idMontoFijo;
+	}
+
+	protected void setIdMontoFijo(int idMontoFijo) {
+		this.idMontoFijo = idMontoFijo;
+	}
+
+	public float getMonto() {
+		return monto;
+	}
+
+	public void setMonto(float monto) {
+		this.monto = monto;
+	}
+	
+	
+
+}

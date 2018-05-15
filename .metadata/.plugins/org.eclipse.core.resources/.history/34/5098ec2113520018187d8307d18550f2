@@ -1,0 +1,31 @@
+package datos;
+
+public class Descuento {
+	private int idDescuento;
+	private float porcentajeDescuento;
+	
+	public Descuento() {}
+
+	public Descuento(float porcentajeDescuento) {
+		super();
+		this.porcentajeDescuento = porcentajeDescuento;
+	}
+
+	public int getIdDescuento() {
+		return idDescuento;
+	}
+
+	protected void setIdDescuento(int idDescuento) {
+		this.idDescuento = idDescuento;
+	}
+
+	public float getPorcentajeDescuento() {
+		return porcentajeDescuento;
+	}
+
+	public void setPorcentajeDescuento(float porcentajeDescuento) {
+		this.porcentajeDescuento = porcentajeDescuento;
+	}
+	
+	
+}

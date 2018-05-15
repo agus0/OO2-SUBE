@@ -1,0 +1,18 @@
+package test;
+import datos.Usuario;
+import negocio.BeneficioABM;
+import negocio.DescuentoABM;
+import negocio.MontoFijoABM;
+import negocio.UsuarioABM;
+
+public class TestAgregarDescuento {
+	public static void main(String[] args) throws Exception {
+		String beneficio= "Plan Estudiantes" ;
+		double porcentajeDescuento = 0.45;
+		UsuarioABM uabm = UsuarioABM.getInstanciaUsuarioABM();
+		Usuario usuario = uabm.traerI(2);
+		MontoFijoABM dabm = MontoFijoABM.getInstanciaMontoFijoABM();
+		dabm.agregar(beneficio,usuario,porcentajeDescuento);
+
+	}
+}

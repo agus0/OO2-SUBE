@@ -1,0 +1,14 @@
+package test;
+import datos.Usuario;
+import negocio.BeneficioABM;
+import negocio.UsuarioABM;
+
+public class TestAgregarBeneficio {
+	public static void main(String[] args) throws Exception {
+		String beneficio= "Plan Estudiantes" ;
+		UsuarioABM uabm = UsuarioABM.getInstanciaUsuarioABM();
+		Usuario usuario = uabm.traerI(3);
+		BeneficioABM abm= BeneficioABM.getInstanciaBeneficioABM();
+		abm.agregar(beneficio, usuario);
+	}
+}
