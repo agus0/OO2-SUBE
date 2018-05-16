@@ -5,14 +5,16 @@ import java.util.*;
 public class Boleto {
 	private long idBoleto;
 	private Tarjeta tarjeta;
+	private Lector lector;
 	private double monto;
 	private double montoConDescuento;
 	private GregorianCalendar fechaHoraBoleto;
 	
 	public Boleto() {}
 
-	public Boleto(Tarjeta tarjeta, double monto, double montoConDescuento, GregorianCalendar fechaHoraBoleto) {
+	public Boleto(Tarjeta tarjeta,Lector lector, double monto, double montoConDescuento, GregorianCalendar fechaHoraBoleto) {
 		this.tarjeta = tarjeta;
+		this.lector = lector;
 		this.monto = monto;
 		this.montoConDescuento = montoConDescuento;
 		this.fechaHoraBoleto = fechaHoraBoleto;
@@ -32,6 +34,14 @@ public class Boleto {
 
 	public void setTarjeta(Tarjeta tarjeta) {
 		this.tarjeta = tarjeta;
+	}
+	
+	public Lector getLector() {
+		return lector;
+	}
+
+	public void setLector(Lector lector) {
+		this.lector = lector;
 	}
 
 	public double getMonto() {

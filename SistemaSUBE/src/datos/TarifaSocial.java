@@ -1,7 +1,7 @@
 package datos;
 
 public class TarifaSocial extends Beneficio {
-	private long idDescuento;
+	private long idTarifaSocial;
 	private double porcentajeDescuento;
 	
 	public TarifaSocial() {}
@@ -11,12 +11,12 @@ public class TarifaSocial extends Beneficio {
 		this.porcentajeDescuento = porcentajeDescuento;
 	}
 
-	public long getIdDescuento() {
-		return idDescuento;
+	public long getIdTarifaSocial() {
+		return idTarifaSocial;
 	}
 
 	protected void setIdDescuento(long idDescuento) {
-		this.idDescuento = idDescuento;
+		this.idTarifaSocial = idDescuento;
 	}
 
 	public double getPorcentajeDescuento() {
@@ -29,7 +29,7 @@ public class TarifaSocial extends Beneficio {
 
 	@Override
 	public String toString() {
-		return "Descuento [idDescuento=" + idDescuento + ", porcentajeDescuento=" + porcentajeDescuento
+		return "TarifaSocial [idTarifaSocial=" + idTarifaSocial + ", porcentajeDescuento=" + porcentajeDescuento
 				+ ", beneficio= " + getBeneficio() + "]";
 	}
 

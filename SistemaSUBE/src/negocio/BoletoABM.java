@@ -18,12 +18,12 @@ public class BoletoABM {
 	
 	public Boleto traer( long id)throws Exception{
 		Boleto c= dao .traer(id);
-		if(c==null) throw new Exception("El bleto con esa ID no existe");
+		if(c==null) throw new Exception("El boleto con esa ID no existe");
 		else return c;
 	}
 
-	public int agregar(Tarjeta tarjeta, double monto, double montoConDescuento, GregorianCalendar fechaHoraBoleto){
-		Boleto c= new Boleto(tarjeta, monto, montoConDescuento, fechaHoraBoleto);
+	public int agregar(Tarjeta tarjeta,Lector lector, double monto, double montoConDescuento, GregorianCalendar fechaHoraBoleto){
+		Boleto c= new Boleto(tarjeta,lector, monto, montoConDescuento, fechaHoraBoleto);
 			return dao .agregar(c);
 	}
 	

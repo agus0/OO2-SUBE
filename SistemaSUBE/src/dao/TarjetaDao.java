@@ -13,7 +13,7 @@ public class TarjetaDao {
 	private Transaction tx ;
 	private static TarjetaDao instanciaTarjetaDao;
 	
-	public static TarjetaDao getInstanciaBeneficioDao() {
+	public static TarjetaDao getInstanciaTarjetaDao() {
 		if ( instanciaTarjetaDao == null ) {
 			instanciaTarjetaDao = new TarjetaDao();
 		}

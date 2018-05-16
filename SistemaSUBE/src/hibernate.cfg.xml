@@ -12,6 +12,9 @@
 		<property name="show_sql">false</property>
 		<mapping resource="mapeo/Usuario.hbm.xml"/>
 		<mapping resource="mapeo/Beneficio.hbm.xml"/>
+		<mapping resource="mapeo/Tarjeta.hbm.xml"/>
+		<mapping resource="mapeo/Boleto.hbm.xml"/>
+		<mapping resource="mapeo/Lector.hbm.xml"/>
 
 	</session-factory>
 </hibernate-configuration>	

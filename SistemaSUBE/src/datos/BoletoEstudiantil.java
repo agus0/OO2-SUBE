@@ -1,7 +1,7 @@
 package datos;
 
 public class BoletoEstudiantil extends Beneficio {
-	private long idMontoFijo;
+	private long idBoletoEstudiantil;
 	private double monto;
 	
 	public BoletoEstudiantil() {}
@@ -11,12 +11,12 @@ public class BoletoEstudiantil extends Beneficio {
 		this.monto = monto;
 	}
 
-	public long getIdMontoFijo() {
-		return idMontoFijo;
+	public long getIdBoletoEstudiantil() {
+		return idBoletoEstudiantil;
 	}
 
 	protected void setIdMontoFijo(long idMontoFijo) {
-		this.idMontoFijo = idMontoFijo;
+		this.idBoletoEstudiantil = idMontoFijo;
 	}
 
 	public double getMonto() {
@@ -29,7 +29,7 @@ public class BoletoEstudiantil extends Beneficio {
 
 	@Override
 	public String toString() {
-		return "MontoFijo [idMontoFijo=" + idMontoFijo + ", monto=" + monto + ", beneficio= " + getBeneficio()
+		return "MontoFijo [idBoletoEstudiantil=" + idBoletoEstudiantil + ", monto=" + monto + ", beneficio= " + getBeneficio()
 				+ "]";
 	}
 	

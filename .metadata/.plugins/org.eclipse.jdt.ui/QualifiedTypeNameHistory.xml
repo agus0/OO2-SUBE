@@ -3,4 +3,9 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="negocio.TarifaSocialABM"/>
 <fullyQualifiedTypeName name="datos.Beneficio"/>
+<fullyQualifiedTypeName name="negocio.BeneficioABM"/>
+<fullyQualifiedTypeName name="dao.TarjetaDao"/>
+<fullyQualifiedTypeName name="datos.Tarjeta"/>
+<fullyQualifiedTypeName name="negocio.TarjetaABM"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
 </qualifiedTypeNameHistroy>
