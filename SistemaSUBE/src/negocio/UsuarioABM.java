@@ -27,10 +27,10 @@ public class UsuarioABM {
 		else return c;
 	}
 	
-	public int agregar(String apellido, String nombre, int dni)throws Exception{
+	public int agregar(String apellido, String nombre, int dni, Beneficio beneficio)throws Exception{
 		Usuario c = dao.traer(dni);
 			if(c!=null)  throw new Exception("El Usuario con es número de DNI ya existe");
-			else c= new Usuario(apellido, nombre, dni);
+			else c= new Usuario(apellido, nombre, dni, beneficio);
 			return dao .agregar(c);
 	}
 	

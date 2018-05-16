@@ -23,7 +23,7 @@ public class BeneficioABM {
 	}
 
 	public int agregar(String descripcion, Usuario usuario){
-		Beneficio c= new Beneficio(descripcion, usuario);
+		Beneficio c= new Beneficio(descripcion);
 			return dao .agregar(c);
 	}
 	

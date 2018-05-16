@@ -1,7 +1,5 @@
 package datos;
 
-import java.util.Set;
-
 public class Usuario {
 	private long idUsuario;
 	private String nombre;
@@ -11,19 +9,19 @@ public class Usuario {
 
 	public Usuario() {}
 
-	public Usuario(String nombre, String apellido, int dni) {
+	public Usuario(String nombre, String apellido, int dni, Beneficio beneficio) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.dni = dni;
+		this.beneficio = beneficio;
 	}
-
 
 	public long getIdUsuario() {
 		return idUsuario;
 	}
 
-	protected void setIdUsuario(long idUsuario) {
+	public void setIdUsuario(long idUsuario) {
 		this.idUsuario = idUsuario;
 	}
 
@@ -62,7 +60,8 @@ public class Usuario {
 	@Override
 	public String toString() {
 		return "Usuario [idUsuario=" + idUsuario + ", nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni
-				+  "]";
+				+ ", getBeneficio()=" + getBeneficio() + "]";
 	}
+
 
 }

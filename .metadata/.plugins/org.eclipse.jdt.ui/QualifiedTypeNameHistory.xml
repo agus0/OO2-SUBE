@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="dao.UsuarioDao"/>
-<fullyQualifiedTypeName name="dao.BeneficioDao"/>
-<fullyQualifiedTypeName name="datos.Beneficio"/>
-<fullyQualifiedTypeName name="org.hibernate.mapping.Set"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="dao.DescuentoDao"/>
-<fullyQualifiedTypeName name="datos.Descuento"/>
-<fullyQualifiedTypeName name="negocio.UsuarioABM"/>
-<fullyQualifiedTypeName name="datos.Usuario"/>
-<fullyQualifiedTypeName name="negocio.DescuentoABM"/>
-<fullyQualifiedTypeName name="negocio.BeneficioABM"/>
-<fullyQualifiedTypeName name="dao.MontoFijoDao"/>
-<fullyQualifiedTypeName name="datos.MontoFijo"/>
-<fullyQualifiedTypeName name="negocio.MontoFijoABM"/>
-<fullyQualifiedTypeName name="dao.ViajeGratisDao"/>
-<fullyQualifiedTypeName name="datos.ViajeGratis"/>
-<fullyQualifiedTypeName name="negocio.ViajeGratisABM"/>
+<fullyQualifiedTypeName name="negocio.TarifaSocialABM"/>
+<fullyQualifiedTypeName name="datos.Beneficio"/>
 </qualifiedTypeNameHistroy>

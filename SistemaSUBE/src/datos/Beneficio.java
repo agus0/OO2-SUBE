@@ -1,16 +1,17 @@
 package datos;
 
+import java.util.Set;
+
 public class Beneficio {
 	private long idBeneficio;
 	private String beneficio;
-	private Usuario	usuario;
+	private Set<Usuario> usuarios;
 	
 	public Beneficio() {}
 
-
-	public Beneficio(String beneficio, Usuario usuario) {
+	public Beneficio(String beneficio) {
+		super();
 		this.beneficio = beneficio;
-		this.usuario = usuario;
 	}
 
 	public long getIdBeneficio() {
@@ -21,29 +22,26 @@ public class Beneficio {
 		this.idBeneficio = idBeneficio;
 	}
 
-
 	public String getBeneficio() {
 		return beneficio;
 	}
-
 
 	public void setBeneficio(String beneficio) {
 		this.beneficio = beneficio;
 	}
 
-
-	public Usuario getUsuario() {
-		return usuario;
+	public Set<Usuario> getUsuarios() {
+		return usuarios;
 	}
 
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
+	public void setUsuarios(Set<Usuario> usuarios) {
+		this.usuarios = usuarios;
 	}
-
 
 	@Override
 	public String toString() {
 		return "Beneficio [idBeneficio=" + idBeneficio + ", beneficio=" + beneficio + "]";
 	}
+
 
 }

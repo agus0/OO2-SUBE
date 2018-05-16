@@ -1,12 +1,16 @@
 package test;
+import datos.Beneficio;
+import negocio.TarifaSocialABM;
 import negocio.UsuarioABM;
 
 public class TestAgregarUsuario {
 	public static void main(String[] args) throws Exception {
-		String apellido= "Saavedra Griott" ;
-		String nombre= "Daniel" ;
-		int documento=36681165;
+		String apellido= "Saav" ;
+		String nombre= "Diego" ;
+		int documento=38111111;
 		UsuarioABM abm= UsuarioABM.getInstanciaUsuarioABM();
-		abm.agregar(apellido, nombre, documento);
+		TarifaSocialABM tabm = TarifaSocialABM.getInstanciaTarifaSocialABM();
+		Beneficio beneficio = tabm.traer(1);
+		abm.agregar(apellido, nombre, documento,beneficio);
 	}
 }

@@ -2,9 +2,8 @@ package test;
 
 import datos.Usuario;
 import negocio.UsuarioABM;
-import negocio.ViajeGratisABM;
 
-public class TestAgregarViajeGratis {
+/*public class TestAgregarViajeGratis {
 	public static void main(String[] args) throws Exception {
 		String beneficio= "Plan Viaje Gratis" ;
 		int cantidad = 30;
@@ -14,3 +13,4 @@ public class TestAgregarViajeGratis {
 		dabm.agregar(beneficio,usuario,cantidad);
 	}
 }
+*/
