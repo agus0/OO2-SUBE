@@ -15,6 +15,8 @@
 		<mapping resource="mapeo/Tarjeta.hbm.xml"/>
 		<mapping resource="mapeo/Boleto.hbm.xml"/>
 		<mapping resource="mapeo/Lector.hbm.xml"/>
+		<mapping resource="mapeo/Linea.hbm.xml"/>
+		<mapping resource="mapeo/SaldoMinimo.hbm.xml"/>
 
 	</session-factory>
 </hibernate-configuration>	

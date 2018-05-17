@@ -4,15 +4,16 @@ import java.util.Set;
 
 public class Lector {
 	private long idLector;
-	/*private Linea linea;*/
-	private double saldoMinimo;
+	private Linea linea;
+	private SaldoMinimo saldoMinimo;
 	private char tipoLector;
 	private Set<Boleto> boletos;
 	
 	public Lector() {}
 
-	public Lector(double saldoMinimo, char tipoLector) {
+	public Lector(Linea linea,SaldoMinimo saldoMinimo, char tipoLector) {
 		super();
+		this.linea = linea;
 		this.saldoMinimo = saldoMinimo;
 		this.tipoLector = tipoLector;
 	}
@@ -24,12 +25,20 @@ public class Lector {
 	protected void setIdLector(long idLector) {
 		this.idLector = idLector;
 	}
+	
+	public Linea getLinea() {
+		return linea;
+	}
 
-	public double getSaldoMinimo() {
+	public void setLinea(Linea linea) {
+		this.linea = linea;
+	}
+
+	public SaldoMinimo getSaldoMinimo() {
 		return saldoMinimo;
 	}
 
-	public void setSaldoMinimo(double saldoMinimo) {
+	public void setSaldoMinimo(SaldoMinimo saldoMinimo) {
 		this.saldoMinimo = saldoMinimo;
 	}
 
@@ -49,5 +58,9 @@ public class Lector {
 		this.boletos = boletos;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "Lector [idLector=" + idLector + ", tipoLector=" + tipoLector + "]";
+	}
+
 }

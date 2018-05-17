@@ -3,7 +3,6 @@ import java.util.List;
 
 import dao.TarifaSocialDao;
 import datos.TarifaSocial;
-import datos.Usuario;
 
 public class TarifaSocialABM {
 	private static TarifaSocialABM instanciaTarifaSocialABM;

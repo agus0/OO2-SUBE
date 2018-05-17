@@ -3,7 +3,6 @@ import java.util.List;
 
 import dao.BoletoEstudiantilDao;
 import datos.BoletoEstudiantil;
-import datos.Usuario;
 
 public class BoletoEstudiantilABM {
 	private static BoletoEstudiantilABM instanciaBoletoEstudiantilABM;
