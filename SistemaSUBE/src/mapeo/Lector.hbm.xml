@@ -16,5 +16,15 @@
 		<many-to-one name="linea" class="datos.Linea" column="idLinea" not-null="true"/>
 		<many-to-one name="saldoMinimo" class="datos.SaldoMinimo" column="idSaldoMinimo" not-null="true"/>
 		
+	<joined-subclass name="datos.LectorTren" table="lectorTren">
+	<key column="idLectorTren"></key>
+	<property column="salida" name="salida" type="boolean"/>
+	<many-to-one name="estacion" class="datos.Estacion" column="idEstacion" not-null="true"/>
+	</joined-subclass>
+	<joined-subclass name="datos.LectorSubte" table="lectorSubte">
+	<key column="idLectorSubte"></key>
+	<property column="estacionSubte" name="estacionSubte" type="string"/>
+	</joined-subclass>	
+		
 	</class>
 </hibernate-mapping>
