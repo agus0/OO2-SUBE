@@ -17,6 +17,7 @@
 	<key column="idTarifaSocial"></key>
 	<property column="porcentajeDescuento" name="porcentajeDescuento" type="double"/>
 	</joined-subclass>
+	
 	<joined-subclass name="datos.BoletoEstudiantil" table="boletoEstudiantil">
 	<key column="idBoletoEstudiantil"></key>
 	<property column="monto" name="monto" type="double"/>

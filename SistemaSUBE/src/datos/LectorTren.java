@@ -36,6 +36,12 @@ public class LectorTren extends Lector{
 	public void setEstacion(Estacion estacion) {
 		this.estacion = estacion;
 	}
+
+	@Override
+	public String toString() {
+		return "LectorTren [idLectorTren=" + idLectorTren + ", estacion=" + estacion + ", Linea=" + getLinea() + "]";
+	}
+	
 	
 	
 }

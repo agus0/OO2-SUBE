@@ -26,6 +26,11 @@ public class LectorSubte extends Lector{
 	public void setEstacionSubte(String estacionSubte) {
 		this.estacionSubte = estacionSubte;
 	}
+
+	@Override
+	public String toString() {
+		return "LectorSubte [idLectorSubte=" + idLectorSubte + ", estacionSubte=" + estacionSubte + ", Linea=" + getLinea() + "]";
+	}
 	
 	
 

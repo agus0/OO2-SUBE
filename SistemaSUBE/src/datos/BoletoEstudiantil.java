@@ -6,8 +6,8 @@ public class BoletoEstudiantil extends Beneficio {
 	
 	public BoletoEstudiantil() {}
 	
-	public BoletoEstudiantil(String descripcion, double monto) {
-		super(descripcion);
+	public BoletoEstudiantil(String beneficio, double monto) {
+		super(beneficio);
 		this.monto = monto;
 	}
 
