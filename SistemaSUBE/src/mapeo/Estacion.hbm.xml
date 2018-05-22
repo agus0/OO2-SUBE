@@ -14,7 +14,7 @@
 			<one-to-many class="datos.LectorTren" />
 		</set>
 		
-		<set name="estacion1" table="tramoTren" order-by="idTramoTren asc" inverse="true" lazy="true" fetch="select">
+		<set name="estacion1" table="tramoTren"  order-by="idTramoTren asc" inverse="true" lazy="true" fetch="select">
 			<key column="idEstacion" not-null="true" />
 			<one-to-many class="datos.TramoTren" />
 		</set>
