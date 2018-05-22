@@ -3,6 +3,7 @@ package datos;
 public class LectorColectivo extends Lector {
 	private long idLectorColectivo;
 	private String interno;
+	private TramoColectivo tramoColectivo;
 	
 	public LectorColectivo () {}
 
@@ -25,6 +26,14 @@ public class LectorColectivo extends Lector {
 
 	public void setInterno(String interno) {
 		this.interno = interno;
+	}
+
+	public TramoColectivo getTramoColectivo() {
+		return tramoColectivo;
+	}
+
+	public void setTramoColectivo(TramoColectivo tramoColectivo) {
+		this.tramoColectivo = tramoColectivo;
 	}
 
 	@Override
