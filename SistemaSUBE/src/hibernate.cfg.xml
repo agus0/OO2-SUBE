@@ -17,9 +17,7 @@
 		<mapping resource="mapeo/Lector.hbm.xml"/>
 		<mapping resource="mapeo/Linea.hbm.xml"/>
 		<mapping resource="mapeo/SaldoMinimo.hbm.xml"/>
-		<mapping resource="mapeo/Estacion.hbm.xml"/>
-		<mapping resource="mapeo/TramoTren.hbm.xml"/>
-		<mapping resource="mapeo/SeccionTren.hbm.xml"/>
+
 
 
 
