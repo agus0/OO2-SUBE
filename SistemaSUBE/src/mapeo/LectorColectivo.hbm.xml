@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!--
+
+	private long idLectorColectivo;
+	private String interno;
+
+-->
+
+<hibernate-mapping>
+	<class name="datos.LectorColectivo" table="lectorcolectivo">
+	
+		<!-- 1.CAMPOS CLAVE -->
+			<!-- Primaria -->
+				<id column="idTramoColectivo" name="idLectorColectivo">
+					<generator class="identity"/>
+				</id>
+			<!--  -->
+			
+			<!-- Foranea -->
+				<id name="idClaseA" column="idClaseA">
+					<generator class="foreign">
+						<param name="property">claseB</param>
+					</generator>
+				</id>
+			<!--  -->
+		<!--  -->
+
+
+		<!-- 2.ATRIBUTOS DESCRIPTIVOS -->
+			<property column="interno" name="interno" type="string"/>
+
+		<!--  -->
+	
+		
+		
+		<!-- 3.RELACIONES -->
+			<!-- 1..1 -->
+				<one-to-one name="claseB" class="datos.ClaseB"></one-to-one>
+			<!--  -->
+			
+			<!-- 1..* -->
+				<set name="setClaseB" table="claseB" order-by="idClaseB asc" inverse="true" lazy="true" fetch="select">
+					<key column="idClaseA" not-null="true"/>
+					<one-to-many class="datos.ClaseB"/>
+				</set>
+			<!--  -->
+			
+			<!-- *..1 -->
+				<many-to-one column="idClaveForaneaDeClaseA" name="claseB" class="datos.ClaseB" not-null="true"/>
+			<!--  -->
+			
+			<!-- *..* -->
+				<set table="claseAxclaseB" name="setClaseB" outer-join="true">
+					<key column="idClaseA"/>
+					<many-to-many column="idClaseB" class="datos.ClaseB"/>
+				</set>
+			<!--  -->			
+		<!--  -->
+		
+	</class>
+</hibernate-mapping>
