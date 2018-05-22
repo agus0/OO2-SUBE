@@ -30,9 +30,9 @@
 	<joined-subclass name="datos.LectorColectivo" table="lectorColectivo">
 	<key column="idLectorColectivo"></key>
 	<property column="interno" name="interno" type="string"/>
-	<set name="tramosColectivo" table="tramoColectivo" order-by="tramoColectivo asc" inverse="true" lazy="true" fetch="select">
-			<key column="idLectorColectivo" not-null="true" />
-			<one-to-many class="datos.tramoColectivo" />
+	<set table="tramoColectivo" name="seccionColectivo" outer-join="true">
+			<key column="idLectorColectivo" />
+			<many-to-many column="idSeccionColectivo" class="datos.SeccionColectivo" />
 		</set>
 	</joined-subclass>	
 		
