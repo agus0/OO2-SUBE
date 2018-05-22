@@ -6,7 +6,7 @@
 		<id column="idEstacion" name="idEstacion">
 			<generator class="identity"/>
 		</id>
-		<property column="estacion" name="estacion" type="String"/>
+		<property column="estacion" name="estacion" type=string"/>
 		
 		
 		<set name="lectoresTren" table="lectorTren" order-by="idLectorTren asc" inverse="true" lazy="true" fetch="select">
