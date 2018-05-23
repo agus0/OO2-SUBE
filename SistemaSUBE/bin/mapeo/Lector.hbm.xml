@@ -7,12 +7,7 @@
 			<generator class="identity"/>
 		</id>
 		<property column="tipoLector" name="tipoLector" type="char"/>
-		
-		<set name="boletos" table="boleto" order-by="idBoleto asc" inverse="true" lazy="true" fetch="select">
-			<key column="idLector" not-null="true" />
-			<one-to-many class="datos.Boleto" />
-		</set>
-		
+
 		<many-to-one name="linea" class="datos.Linea" column="idLinea" not-null="true"/>
 		<many-to-one name="saldoMinimo" class="datos.SaldoMinimo" column="idSaldoMinimo" not-null="true"/>
 		
@@ -20,13 +15,13 @@
 	<key column="idLectorTren"></key>
 	<property column="salida" name="salida" type="boolean"/>
 	<many-to-one name="estacion" class="datos.Estacion" column="idEstacion" not-null="true"/>
-	</joined-subclass> 
+	</joined-subclass> -->
 	 
 	<joined-subclass name="datos.LectorSubte" table="lectorsubte">
 	<key column="idLectorSubte"></key>
 	<property column="estacionSubte" name="estacionSubte" type="string"/>
-	</joined-subclass>
-		
+	</joined-subclass> 
+		<!--  
 	<joined-subclass name="datos.LectorColectivo" table="lectorColectivo">
 	<key column="idLectorColectivo"></key>
 	<property column="interno" name="interno" type="string"/>
